@@ -14,9 +14,7 @@
     <body>
         <iframe src="https://www.hurriyet.com.tr height="1000" width="1000"> </iframe>
 
-        <form method="POST" action="kaydet.php"></iframe>
-        
-    
+        <form method="POST" action="kaydet.php">
             <!-- http request methods -->
         
             <label for="adi">Adı:</label>
@@ -29,7 +27,28 @@
         
             <input type="submit" value="kaydet">
         </form>
-
+        <form method="POST" action="kontrol.php">
+            <input type="text" id="eposta" name="eposta">
+            <input type="password" id="sifre" name="sifre">
+            <inupt type="checkbox" id="okudum" name=" okudum">
+            <label for="okudum">okdudum alnadım</label>
+            <iniput type="radio" id="cinsiyet" value="erkek">
+            <input type="radio" name="cinsiyet" id="cinsiyet" value="e">
+            <label>erkek</label>
+            <input type="radio" name="cinsiyet" id="cinsiyet" value="k">
+            <label>kadın</label>
+            <textarea></textarea>
+            <input type="reset" value="temizle"
+            <input type="giriş" value="giriş">
+            
+            <select id="bölüm_sec" name="bölüm_sec">
+                <option value="0">lütfen bir bölüm seçiniz</option>
+                <option value="1">ybs</option>
+                <option value="2">iktisat</option>
+                <option value="3">işletme</option>
+            </select>
+        </form>
+        
         
 
 
