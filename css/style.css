@@ -1,17 +1,15 @@
-/* body{
-    background-color: yellow;
-} */
-/* seçiciler sellectors 3 e ayrılmaktadır
+/* seçiciler sellectors:
 1. etiket ile seçme
 2. Id ile seçme tek bir öğeye atama yapılacaksa ıd kullanılmaktadır.
 3. class ile seçme  birden fazla öğete atama yapılacaksa class kullanılmaktadır
 4. evrensel seçiciler
 */
 
+
 /* bu kısım SEÇİCİ yardımıyla oluşturulan css tasarımıdır.
 h1 yazan yer selecter, mavi yerler attribiute ve renk kısmı ise value'dir
-burada dosya içerisinde sıralama yaparken ilk en geniş başlıklara sahip
-karakterleri yaz sonrasında ise küçük başlıkları yaz mesela ilk body
+Css tasarımında sıralama yaparken ilk en geniş başlıklara sahip
+karakterleri yaz sonrasında ise küçük başlıkları yaz, mesela ilk body
 sonrasında h1 etiketi */
 body{
     background-color: aqua;
@@ -45,19 +43,22 @@ h2{
     background-color: burlywood;
     margin-bottom: 10px;
 }
-#kutu{
+
+/* bir etikete ise aynı anda bir kaç tane seçici atanabilmektedir */
+.kutu2{
+    width: 230px;
+    height: 230px;
+    margin-bottom: 10px;
+}
+#kutu2{
     background-color: blueviolet;
 }
 
-/* bir etikete ise aynı anda bir kaç tane seçici atanabilmektedir */
-
 /* bu kısım ise evrensel seçiciler yardımıyla oluşturulan css tasarımıdır. */
-
 *{
     margin:0;
     padding:0;
 }
-
 
 
 
