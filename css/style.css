@@ -1,0 +1,14 @@
+/* body{
+    background-color: yellow;
+} */
+/* seçiciler sellectors 3 e ayrılmaktadır
+1. etiket ile seçme
+2. Id ile seçme tek bir öğeye atama yapılacaksa ıd kullanılmaktadır.
+3. class ile seçme  birden fazla öğete atama yapılacaksa class kullanılmaktadır
+
+*/
+
+h1{
+    color: red;
+
+}
