@@ -5,10 +5,63 @@
 1. etiket ile seçme
 2. Id ile seçme tek bir öğeye atama yapılacaksa ıd kullanılmaktadır.
 3. class ile seçme  birden fazla öğete atama yapılacaksa class kullanılmaktadır
-
+4. evrensel seçiciler
 */
 
-h1{
-    color: red;
-
+/* bu kısım SEÇİCİ yardımıyla oluşturulan css tasarımıdır.
+h1 yazan yer selecter, mavi yerler attribiute ve renk kısmı ise value'dir
+burada dosya içerisinde sıralama yaparken ilk en geniş başlıklara sahip
+karakterleri yaz sonrasında ise küçük başlıkları yaz mesela ilk body
+sonrasında h1 etiketi */
+body{
+    background-color: aqua;
 }
+
+h1, h2{
+    color: red;
+}
+
+h2{
+    background-color: chartreuse;
+}
+
+
+/* bu kısım ise etiket yardımıyla oluşturulan css tasarımıdır. 
+# işareti id seçici olduğunu göstermektedir. */
+
+#p_bir{
+    font-size: 30px;
+}
+
+#p_iki{
+    coler: red;
+}
+
+
+/* bu kısım ise class yardımıyla oluşturulan css tasarımıdır. */
+.kutu{
+    width: 230px;
+    height: 230px;
+    background-color: burlywood;
+    margin-bottom: 10px;
+}
+#kutu{
+    background-color: blueviolet;
+}
+
+/* bir etikete ise aynı anda bir kaç tane seçici atanabilmektedir */
+
+/* bu kısım ise evrensel seçiciler yardımıyla oluşturulan css tasarımıdır. */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+
+
+
