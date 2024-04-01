@@ -203,6 +203,70 @@ div{
     background-color: red;
 }
 
+/* css kutu modeli: margin ve padding. margin dış boşluk anlamına gelir
+bir öğenin hemen dışındaki ile olan mesafesi. padding ise iç boşluk anlamına gelir
+bir öğenin hemen içindeki diğer öğe ile  */
+
+#kutucuk1{
+    background-color: #ccc;
+    width: 250px;
+    height: 250px;
+    margin:30px; 
+    /* her tarafında 30 birimlik boşluk oluşturdu */
+}
+#kutucuk2{
+    background-color: purple;
+    width: 250px;
+    height: 250px;
+    margin: 60px;
+}#kutucuk3{
+    background-color: greenyellow;
+    width: 250px;
+    height: 250px;
+    margin-top: 60px;
+    margin-left: 10px;
+}
+/* divler blok elemanlardır */
+
+input[type="submit"]{
+    margin: 40px;
+    /* bu ayrıca padding işlemidir üste pading de ekleyebilirdin, kutucuktaki 
+    marginin altına */
+}
+
+.menu{
+    width: 800px;
+    height: 50px;
+    background-color: #000;
+    margin: 0 auto;
+    border-bottom: 4px solid red;
+
+}
+.menu ul li{
+    float:left; 
+    /* içerideki öğelerin yan yana gelmesini sağlıyor */
+    list-style-type: none;
+}
+.menu ul li a{
+    color: greenyellow;
+    font: 14px;
+    text-decoration: none;
+    display:block;
+    padding: 14px 15px;
+
+}
+
+.menu ul li a:hover{
+    background: red;
+    color: blue;
+}
+
+
+
+
+
+
+
 
 
 
