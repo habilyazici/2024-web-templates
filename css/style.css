@@ -94,50 +94,114 @@ h3+p{
 }
 /* h3 ten hemen sonra bir p etiketi varsa ona uyguluyor bu etiketi */
 
+/* özellilk seçiciler */
+a[title="link_1"]{
+    color: red;
+}
+
+input[type="text"]{
+    color: red;
+}
 
 
+input[type="submit"]{
+    color: green;
+    width: 300px;
+}
+
+/* bu diğer seçicilere aslında hiç gerek yok çünkü class ve id atamayla
+zaten işini halledebiliyorsun ama çok fazla class ve id gereksiz
+olarak kabul edilmiştir */
+
+input[value="temizle"]{
+    background-color: aqua;
+    color:coral;
+    width:100px;
+    height:100px
+}
+
+/* sözde sınıflar ve sözde elemanlar */
+/* normalde linkler mavi renk olarak gözükmektedir ama 
+üstüne tıklayınca başka renk olurlar */
+
+ul li{
+    list-style-type: none;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color:green;
+}
+a:visited{
+    color:red;
+}
+a:active{
+    color:blueviolet;
+}
+
+/* focus() dokununca ona renk değişimi oluyor */
+input[type="text"]:focus{
+    background-color: yellow;
+    border:1px solid red;
+}
+
+p::first-letter{
+    font-size:36px;
+
+}
+p::before{
+    content:"ybs"; 
+    color: orange;
+}
+
+/* öncelik sırası */
+li{
+    color: blue;
+}
+.sinif{
+    color: yellow;
+}
+#yeni{
+    color:purple !important
+}
+
+#yazi{
+    color:red;
+    line-height: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 23px;
+    font-style: italic;
+    text-transform: uppercase;
+    text-decoration: line-through;
+}
+#p_1{
+    text-indent: 30px;
+    text-align: center;
+    vertical-align: top;
+    line-height: 28px;
+    word-spacing: 25px;
+    letter-spacing: 25px;
+    text-shadow: 2px 2px 20px #990033;
+    white-space: normal;
+    direction: ltr;
+}
 
 
+html{
+    background-color: #0099FF;
+}
+body{
+    background-image: url("../img/2_water1920x1080.jpg");
+    min-height: 1200px;
+    background-attachment: scroll;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+div{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
 
 
 
