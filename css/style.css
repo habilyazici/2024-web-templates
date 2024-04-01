@@ -3,6 +3,7 @@
 2. Id ile seçme tek bir öğeye atama yapılacaksa ıd kullanılmaktadır.
 3. class ile seçme  birden fazla öğete atama yapılacaksa class kullanılmaktadır
 4. evrensel seçiciler
+5. torun seçiciler
 */
 
 
@@ -54,11 +55,89 @@ h2{
     background-color: blueviolet;
 }
 
+
+
 /* bu kısım ise evrensel seçiciler yardımıyla oluşturulan css tasarımıdır. */
 *{
     margin:0;
     padding:0;
 }
+/* tüm sayfadaki her şeyi seçmek için yıldız kullanılır */
+
+/* Torun seçiciler parent child ilişkisini anlatmaktadır.
+Her zaman ıd ve class kullanılmamaktadır o yüzden torun seçiciler*/ 
+
+/* çocuk seçiciler */
+ul li a{
+    color: red;
+}
+
+ul li a em{
+    color: black;
+}
+
+/* burada ise class seçicisinde daha özelleştirilebilir bir yöntem */
+.site li strong{
+    color: yellow;
+}
+
+/* h2 nin içinden direkt em varsa onu seç bulursa atmaasını yapar kod
+yani başka bir etiketin içinde olmayacak*/
+h3 strong > em{
+    color: salmon;
+}
+
+/* bitişik seçiciler */
+h3+p{
+    font-size: 35px;
+    color: pink;
+}
+/* h3 ten hemen sonra bir p etiketi varsa ona uyguluyor bu etiketi */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
