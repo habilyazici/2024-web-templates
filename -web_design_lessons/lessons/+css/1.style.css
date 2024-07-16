@@ -1,0 +1,111 @@
+/* Seçiciler - sellectors:
+1. Etiket ile seçme,
+2. Id ile seçme, tek bir öğede seçim yapılacaksa ıd kullanılmaktadır.
+3. Class ile seçme, birden fazla öğede seçim yapılacaksa class kullanılmaktadır
+4. Evrensel seçiciler
+5. Torun seçiciler
+6. Bitişik seçiciler
+7. Özellik seçiciler 
+8. Sözde sınıflar ve sözde elemanlar 
+
+Css tasarımında sıralama yaparken ilk en geniş başlıklara sahip
+etiketleri tasarla sonrasında ise diğer etiketleri tasarla */
+
+/* 1.Etiket ile seçme, body selecter, mavi yer attribiute, renk ise value'dir */
+body{
+    background-color: aqua;
+}
+
+h1, h2{
+    color:maroon;
+    background-color: chartreuse;
+
+}
+
+/* 2.Id ile seçme, Id ile seçmide #(sharp) işareti kullanılır */
+#p_1{
+    font-size: 30px;
+}
+
+#p_2{
+    color: red;
+}
+
+/* 3.Class ile seçme, class ile seçimde . işareti kullanılır */
+.kutu{
+    width: 80px;
+    height: 80px;
+    background-color: burlywood;
+    margin-bottom: 10px;
+}
+#kutu{
+    background-color: blueviolet;
+}
+
+/* Eğer alt alta aynı seçiciler kullanırsan ve içine bir şeyler yazarsan 
+css tasarımında sırasal olarak alttaki tasarım dikkate alınır, alt alta farklı 
+seçiciler kullanırsan seçicilerdeki kesişmeyen ayarlar etikete eklenir
+kesişenlerde ise öncelikli olan dikkate alınır. id classtan önceliklidir 
+Çocukları kullandığın bir tasarım ve daha az özellik belirten başka bir
+tasarım kullandığında çocukları kullandığın tasarım önde olacaktır. */
+
+/* 4.Evrensel seçiciler ile seçme, tüm sayfadaki(tüm elementler!) her şeyi 
+seçmek için *(yıldız) kullanılır.*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* 5.Torun veya çocuk seçiciler ile seçme */ 
+ul li{
+    list-style-type: none;
+    /* listenin madde işaretin kaldırıyor */
+}
+ul li a{
+    color: red;
+}
+ul li em{
+    color: black;
+}
+.site li strong{
+    color: yellow;
+}
+
+/* Bu kısımda etiketlerin arasında başka etiketlerin olması önemli değil. */
+h3 b{
+    color: blue;
+}
+h3 em > b{
+    color: salmon;
+}
+/* h3 ve em'in içinde ve em'in direkt çocuğu olarak b varsa(em'in içinde bir 
+şeyler yazabilir) b'nin rengini salmon yapar*/
+
+/* 6.Bitişik seçiciler */
+h3+p{
+    font-size: 18px;
+    color:pink;
+    font-style: italic;
+} 
+/*h3 ten hemen sonraki element olarak bir p etiketi varsa ona uyguluyor bu etiketi */
+
+/* 7.Özellilk seçiciler */
+a[title="link_1"]{
+    color:chartreuse;
+}
+input[placeholder="Adınızı giriniz."]{
+    color: blue;
+    background-color: red;
+}
+
+input[id="i_1"]{
+    color: green;
+    background-color: aquamarine;
+    width: 300px;
+}
+input[value="temizle"]{
+    background-color:chartreuse;
+    color:coral;
+    width:75px;
+    height:75px
+}

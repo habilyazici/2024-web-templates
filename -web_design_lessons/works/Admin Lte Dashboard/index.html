@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AdminLTE 3 | Dashboard 3</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="sidebar2">
+      <div class="img"><a href=""> <img src="./img/AdminLTELogo.png"> </a>
+      </div>
+      <span> <a href="#">
+          <p>AdminLTE </p>
+        </a></span>
+    </div>
+    <div class="content2">
+        <div class="left">
+          <ul>
+            <li><a href="#"><i class="fas fa-bars"></i> </a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact </a></li>
+          </ul>
+        </div>
+        <div class="rigt">
+          <ul>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <li><a href="#"><i class="far fa-comments"></i> <span>3</span></a></li>
+            <li><a href="#"><i class="far fa-bell"></i> </a></li>
+            <li><a href="#"><i class="fas fa-expand-arrows-alt"></i> </a></li>
+            <li><a href="#"><i class="fas fa-th-large"></i> </a></li>
+          </ul>
+        </div>
+    </div>
+  </header>
+  <div class="container">
+    <div class="sidebar">
+      <div class="logo2">
+        <a href="#"> <img src="./img/user2-160x160.jpg"></a>
+        <a href="#"><span>Habil Yazıcı</span></a>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="search">
+        <button><i class="fas fa-search fa-fw"></i></button>
+      </div>
+      <div class="sidebar-sekme">
+        <ul>
+          <li class="sidebar-sekmeler" id="ilksekme">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-tachometer-alt"></i></a>
+              <p>Dashboard</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="far fa-circle nav-icon"></i></a>
+              <p> Dashboard v1</p>
+            </div>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="far fa-circle nav-icon"></i></a>
+              <p> Dashboard v2</p>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="far fa-circle nav-icon"></i></a>
+              <p> Dashboard v3</p>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-th"></i></a>
+              <p>Widgets</p>
+            </div>
+            <div class="ikinci-kisim">
+              <span class="widgets"> <img src="./img/new.png"></span>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-copy"></i></a>
+              <p> Layout Options</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fas fa-angle-left right"></i>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-chart-pie"></i></a>
+              <p>Charts</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fas fa-angle-left right"></i>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-tree"></i></a>
+              <p> UI Elements</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fas fa-angle-left right"></i>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-edit"></i></a>
+              <p> Forms</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fas fa-angle-left right"></i>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-table"></i></a>
+              <p> Tables</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fas fa-angle-left right"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <p class="examples"> Examples</p>
+      <div class="sidebar-sekme">
+        <ul>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-calendar-alt"></i></a>
+              <p> Calender</p>
+            </div>
+            <div class="ikinci-kisim">
+              <span><img src="./img/2.png"></span>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-columns"></i></a>
+              <p> Kanban Board</p>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon far fa-envelope"></i></a>
+              <p> MailBox</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fas fa-angle-left right"></i>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-book"></i></a>
+              <p> Pages</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fas fa-angle-left right"></i>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon far fa-plus-square"></i></a>
+              <p> Extras</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fas fa-angle-left right"></i>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-search"></i></a>
+              <p> Search</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="fas fa-angle-left right"></i>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <p class="examples"> Mıscellaneous</p>
+      <div class="sidebar-sekme">
+        <ul>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-ellipsis-h"></i></a>
+              <p> Tabbed IFrame Plugin</p>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon fas fa-file"></i></a>
+              <p> Documentation</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <p class="examples"> Multi Level</p>
+      <div class="sidebar-sekme">
+        <ul>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="fas fa-circle nav-icon"></i></a>
+              <p> Level1</p>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="fas fa-circle nav-icon"></i></a>
+              <p> Level1</p>
+            </div>
+            <div class="ikinci-kisim">
+              <i class="right fas fa-angle-left"></i>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler">
+            <div class="ilk-kisim">
+              <a href="#"><i class="fas fa-circle nav-icon"></i></a>
+              <p> Level1</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <p class="examples"> Labels</p>
+      <div class="sidebar-sekme">
+        <ul>
+          <li class="sidebar-sekmeler halkalar">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon far fa-circle text-danger"></i></a>
+              <p> Important</p>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler halkalar">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon far fa-circle text-danger"></i></a>
+              <p> Warning</p>
+            </div>
+          </li>
+          <li class="sidebar-sekmeler halkalar">
+            <div class="ilk-kisim">
+              <a href="#"><i class="nav-icon far fa-circle text-danger"></i></a>
+              <p> Inrofmational</p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content-main">
+        <div class="content-header">
+          <h1>Dashboard v3</h1>
+          <span><a href="https://www.fintables.com">Home</a><span class="dashboard-p">/ Dashboard v3</span></span>
+        </div>
+        <div class="container-section">
+          <div class="container-rows">
+            <div class="container-column-1-of-2 container-column">
+              <div class="column-header">
+                <h3>Online Store Visitors</h3>
+                <a href="www.google.com">View Report</a>
+              </div>
+              <div class="column-footer">
+                <div class="column-footer1">
+                  <div>
+                    <span>820</span>
+                    <p>Visitors Over Time</p>
+                  </div>
+                  <div>
+                    <i class="fas fa-arrow-up"></i><span>12.5%</span>
+                    <p>Since last week</p>
+                  </div>
+                </div>
+                <div class="column-footer2">
+                  <canvas id="lineChart"></canvas>
+                  <script>
+                    let delayed;
+                    const aylar = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık'];
+                    const satislar = [1200, 1500, 1780, 1950, 2000, 3500, 8500, 7450, 6500, 2560, 8000, 9000];
+                    const ctx = document.getElementById('lineChart').getContext('2d');
+                    const lineChart = new Chart(ctx, {
+                      type: 'line',
+                      data: {
+                        labels: aylar,
+                        datasets: [{
+                          data: satislar,
+                          borderColor: 'rgba(75,192,192,1)',
+                          backgroundColor: 'rgba(75,192,192,0.2)',
+                          borderWidth: 1,
+                          fill: true
+                        }]
+                      },
+                      options: {
+                        animation: {
+                          onComplete: () => {
+                            delayed = true;
+                          },
+                          delay: (context) => {
+                            let delay = 0;
+                            if (context.type === 'data' && context.mode === 'default' && !delayed) {
+                              delay = context.dataIndex * 300 + context.datasetIndex * 100;
+                            }
+                            return delay;
+                          },
+                        },
+                        plugins: {
+                          title: {
+                            display: true,
+                            text: 'Aylara Göre Satışlar',
+                          }
+                        },
+                        responsive: true,
+                        scales: {
+                          x: {
+                            stacked: true,
+                          },
+                          y: {
+                            stacked: true
+                          }
+                        }
+                      }
+                    })
+                  </script>
+                </div>
+                <div class="column-footer3">
+                  <i class="fas fa-square text-primary"></i><span>This Week</span>
+                  <i class="fas fa-square text-primary"></i><span>Last Week</span>
+                </div>
+              </div>
+            </div>
+            <div class="container-column-2-of-2 container-column">
+              <div class="column-header two-column-top">
+                <h3>Products</h3>
+                <div>
+                  <a href="www.asdfa.com"><i class="fas fa-bars"></i></a>
+                  <a href="www.asdfa.com"><i class="fas fa-download"></i></a>
+                </div>
+              </div>
+              <div class="column-footer two-column-footer">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Price</th>
+                      <th>Sales</th>
+                      <th>More</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div><img src="./img/default-150x150.jpeg"><span>Same Product</span></div>
+                      </td>
+                      <td>$13 USD</td>
+                      <td class="sales-td-1"><i class="fas fa-arrow-up"></i><span>12.5%</span>12,000 Sold</td>
+                      <td><i class="fas fa-search"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div><img src="./img/default-150x150.jpeg"><span>Another Product</span></div>
+                      </td>
+                      <td>$29 USD</td>
+                      <td class="sales-td-2"><i class="fas fa-arrow-down"></i><span>12.5%</span>123,234 Sold</td>
+                      <td><i class="fas fa-search"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div><img src="./img/default-150x150.jpeg"><span>Amazing Product</span></div>
+                      </td>
+                      <td>$1,230 USD</td>
+                      <td class="sales-td-3"><i class="fas fa-arrow-down"></i><span>12.5%</span>198 Sold</td>
+                      <td><i class="fas fa-search"></i></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div><img src="./img/default-150x150.jpeg"><span>Perfect Item <img id="new-png"
+                              src="./img/new.png"></span></div>
+                      </td>
+                      <td>$199 USD</td>
+                      <td class="sales-td-1"><i class="fas fa-arrow-up"></i><span>12.5%</span>87 Sold</td>
+                      <td><i class="fas fa-search"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="container-rows2 container-rows">
+            <div class="container-column2-1-of-2 container-column">
+              <div class="column-header">
+                <h3>Sales</h3>
+                <a href="www.google.com">View Report</a>
+              </div>
+              <div class="column-footer">
+                <div class="column-footer1">
+                  <div>
+                    <span>$18,230.00</span>
+                    <p>Sales Over Time</p>
+                  </div>
+                  <div>
+                    <i class="fas fa-arrow-up"></i><span>33.1%</span>
+                    <p>Since last month</p>
+                  </div>
+                </div>
+                <div class="column-footer2 column-footer2-2">
+                </div>
+                <div class="column-footer3">
+                  <i class="fas fa-square text-primary"></i><span>This Week</span>
+                  <i class="fas fa-square text-primary"></i><span>Last Week</span>
+                </div>
+              </div>
+            </div>
+            <div class="container-column2-2-of-2 container-column">
+              <div class="column-header two-column-top">
+                <h3>Online Store Overview</h3>
+                <div>
+                  <a href="www.asdfa.com"><i class="fas fa-bars"></i></a>
+                  <a href="www.asdfa.com"><i class="fas fa-download"></i></a>
+                </div>
+              </div>
+              <div class="column-footer">
+                <div class="column-footer1 column-footer4">
+                  <div>
+                    <div><i class="fa-solid fa-rotate-right"></i></div>
+                  </div>
+                  <div>
+                    <i class="fas fa-arrow-up"></i><span>12%</span>
+                    <p>CONVERSION RATE</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="column-footer1 column-footer4">
+                  <div>
+                    <div><i class="fa-sharp fa-solid fa-cart-shopping" style="color: #FFD43B;"></i></div>
+                  </div>
+                  <div>
+                    <i class="fas fa-arrow-up"></i><span>0.8%</span>
+                    <p>SALES RATE</p>
+                  </div>
+                </div>
+                <hr>
+                <div class="column-footer1 column-footer4">
+                  <div>
+                    <div><i class="fa-solid fa-users" style="color: #ff0000;"></i></div>
+                  </div>
+                  <div>
+                    <i class="fas fa-arrow-down"></i><span>1%</span>
+                    <p>REGISTRATION RATE</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="content-footer">
+        <hr>
+        <div class="footer2">
+          <div class="autowidth">
+            <p>Copyright © 2014-2021</p>
+            <a href="https://www.fintables.com">AdminLTE.io</a>
+            <p id="all-rigths">All rights reserved.</p>
+          </div>
+          <div class="autowidth2">
+            <p>Version</p><span>3.2.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

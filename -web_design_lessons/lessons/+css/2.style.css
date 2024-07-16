@@ -1,0 +1,47 @@
+/* Sözde sınıflar */
+/* a:link ziyaret edilemmiş linklerin a:visited ise ziyaret edilmişlerin hangi özellik
+barındırdığını söylemektedir.*/
+a:link{
+    text-decoration:none;
+    color:green;
+}
+a:visited{
+    color:red;
+}
+#li_1 a{
+    background-color: burlywood;
+    color:black;
+}
+a:hover{
+    color:bisque;
+    background-color: black;
+}
+
+a:active{
+    color:blueviolet;
+}
+/* tam bağlantıya tıkladığında bir iki saniye için özellikleri barındırır */
+
+input[type="text"]:focus{
+    background-color: yellow;
+    border:5px solid red;
+}
+form input:hover{
+    color:red;
+    background-color: blue;
+}
+
+/* Sözde elemanlar */
+p::first-letter {
+    font-size: 30px;
+}
+body p::before{
+    content:"ybs"; 
+    color: orange;
+} 
+p.asdfg::first-letter {
+    font-size: 45px ;
+}
+ 
+
+

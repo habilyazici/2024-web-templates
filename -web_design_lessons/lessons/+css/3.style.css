@@ -1,0 +1,145 @@
+/* Öncelik sırası */
+html{
+    background-color: #0099FF;
+} 
+body{
+    background-image: url(../İmg/pexels-stijn-dijkstra-3265460.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: cover; */
+    min-height: 1200px;
+    min-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+#yeni{
+    color:black ;
+
+}
+.sinif{
+    color: yellow !important;
+}
+li{
+    color: blue;
+}   
+/* Sıralamada spesifik seçiciler önde ayrıca hiyerarşik olarak alttaki tasarım önde
+ve important ile durumu değiştirebilirsin. */
+
+#p_1{
+    color:red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* sırasıyla renkler tanımlı değilse bir sonrakini alır */
+    font-size: 23px;
+    font-style: italic;
+    text-transform: capitalize;
+    /* uppercase lowercase capitalize */
+    text-decoration: line-through;
+}
+
+#p_2{
+    text-indent: 60px;
+    text-align: center;
+    line-height: 28px;
+    letter-spacing: 25px;
+    word-spacing: 25px;
+    text-shadow: 4px 4px 5px #990033;
+    /* Metnin 4 piksel sağa ve 4 piksel aşağıya bir gölge ekler.Gölgenin bulanıklık
+    miktarı 5 piksel ve gölgenin rengi #990033 olur */
+    /* white-space: normal;
+    direction: ltr; */
+}
+
+#kutucuk1 {
+    display: flex; /* içeriği flex konteyner yapar */
+    flex-direction: row; /* flexin içeriğini yatay olarak yerleştirir */
+    justify-content: center; /* içerikleri yatay eksende eşit parçaya böler ve ortalar */
+    align-items: center; /* içerikleri dikey eksende eşit parçaya böler ve ortalar*/
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    /* inline elementlerin genişlik ve yükseklik özellikleri olmamakla beraber
+    marign ve paddingler sadece yatay yönde işe yarar buna karşın inline-blok
+    ile her şeyi yapabilirsin*/
+}
+#kutucuk1 input {
+    font-size: 8px;
+}
+#kutucuk1 p {
+    font-size: 14px;
+}
+input[type="submit"]{
+    color:blue;
+    background-color:chartreuse;
+}
+
+#kutucuk2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    margin: 60px;
+}
+#kutucuk3{
+    background-color: greenyellow;
+    width: 100px;
+    height: 100px;
+    padding-top: 30px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    /* bu sayede padding değerlerini içeriye ekledik */
+}  
+.menu {
+    position: fixed;
+    top:-90px;
+    width: 550px;
+    height: 50px;
+    margin: 100px auto;
+    border-bottom: 4px solid red;
+    background-image: url(../İmg/bulut-turleri.jpg) ;
+}
+.menu, .menu ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+}
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+.menu li{
+    margin-right: 10px;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid #ddd;
+    display: none;
+}
+.menu li:last-child{
+    margin-right: 0px;
+}
+.menu:hover li {
+    display: inline;
+    /* ister inline ister display inline de bu durum için
+    çünkü boyutlarını dış divden ayarladık */
+}
+
+.menu li a {
+    color: blue;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 14px 32px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: red;
+    color: white;
+    font-size: 17px;
+    transition: 0.2s;
+}

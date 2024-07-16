@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="tr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bu ilk Sayfa </title>
+</head>
+
+<body>
+    <form>
+        <!-- labeli inputa bağla ki üstüne gelince ikisine de dokunabil ayrıca inputun kapatma etiketi yoktur-->
+        <p> <label for="surname"> Soyisim: </label>
+            <input id="surname" type="text">
+        </p>
+        <label> Araba isimleri: <input type="text" placeholder="Lütfen isminizi giriniz" required> </label>
+        <label> EMail: <input type="email" required> </label>
+        <br>
+        <label> Şifre: <input type="password"> </label>
+
+        <p>
+            <label>BMW: <input type="checkbox"> </label>
+            <label>Audi: <input type="checkbox"> </label>
+            <label for="ford">Ford: </label>
+            <input id="ford" type="checkbox">
+            <!-- checkboxlarda istediğin kadar seçim yapabiliyosun ve seçimini iptal edebiliyorsun -->
+        </p>
+        <p>
+            <label>Ekmek: <input type="radio"> </label>
+            <label>Domates: <input type="radio"> </label>
+            <label>Salatalık: <input type="radio"> </label>
+            <!-- radiolarda istediğin kadar seçim yapabiliyosun ama seçimini iptal edemiyorsun-->
+        </p>
+        <fieldset>
+            <!-- fieldset bir blok elementtir -->
+            <!-- Eğer radio'da sadece bir tuş seçim yapılsın istiyorsan tüm radioların name'ini aynı yap buradaki name radio type'na özel
+                olarak oluşturulmuştur bu özelliklik sonucu olarak value methodu name'in asıl görevini yerine getiriyor.-->
+            <legend style="margin: 0px auto;"> Öğrenci Araç Gereçleri</legend>
+            <label>Kalem: <input type="radio" name="kalemkutuluğum" value="kalem"> </label>
+            <label>Silgi: <input type="radio" name="kalemkutuluğum" value="silgi"> </label>
+            <label>Uç: <input type="radio" name="kalemkutuluğum" value="Uç"> </label>
+        </fieldset>
+
+        <p> <label>Tarihi giriniz: <input type="date"> </label> </p>
+        <textarea cols="111px" rows="11px" placeholder="lütfen mesajınızı giriniz."></textarea>
+        <input type="reset" value="temizlemek için dokun">
+        <p><input type="submit" value="Giriş Yapmak İçin Tıkla "></p>
+        <hr>
+    </form>
+
+    <form method="POST" action="kaydet.php">
+        <!-- http request methods, bu form verilerini kaydet.php dosyasına post yöntemiyle göndermektedir.-->
+        <label for="adi">Adı:</label>
+        <input type="text" id="adi" name="adi" placeholder="lütfen adınızı girin">
+        <!-- buradaki name özelliği ise form verileri sunucuya gönderilirken input verisiyle name'i eşleştirerek gönderir. yani; adi, girilen input 
+            verisine SOYADI, ise girilen soyadi verisine eşittir  -->
+        <label for="soyadi">Soyadı:</label>
+        <input type="text" name="soyadi" id="soyadi">
+        <label for="renk">Lütfen renk seçiniz :</label>
+        <input id="renk" name="renk" type="color">
+        <label for="sayi">lütfen 1 ile 100 arasında bir sayı giriniz</label>
+        <input type="number" id="sayi" min="1" max="100" name="sayi">
+        <input type="range" min="9" max="100" step="10" value="35">
+        <input type="url" pattern="https://www.+" placeholder="Url gir..">
+        <select class="bölüm_sec" name="bölüm_sec">
+            <option value="0">lütfen bir bölüm seçiniz</option>
+            <option value="1">ybs</option>
+            <option value="2">iktisat</option>
+            <option value="3">işletme</option>
+        </select>
+    </form>
+</body>
+
+
+</html>
