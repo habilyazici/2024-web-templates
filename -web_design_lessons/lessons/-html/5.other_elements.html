@@ -1,56 +1,55 @@
 <!DOCTYPE html>
-<html lang="tr">
-
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="content-language" content="tr">
+    <meta http-equiv="content-language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Bu diğer Sayfa</title>
+    <title>This is the other page</title>
 </head>
 
 <body>
     <h1>Figure and figcaption</h1>
     <fig>
         <img src="../İmg/2_water1920x1080.jpg" height="100" width="100">
-        <figcaption> Bu bir su fotğrafıdır. </figcaption>
-    </fig> <!-- fig ve figcaption arama motoru için kullanılmaktadır. -->
-    <time datetime="2024-01-20">20 Temmuz 2024 tarihinde yayınlandı</time>
-    <p>Bu <mark>çok önemli</mark> bir nottur.</p> <!-- standart olarak sarı renkle vurgulamak için kullanılır -->
+        <figcaption> This is a photo showing water</figcaption>
+    </fig> <!-- fig" and "figcaption" are used for search engines. -->
+    <time datetime="2024-01-20">Published on July 20, 2024 </time>
+    <p>This is<mark> much important</mark> a note.</p> <!-- It is used to highlight in yellow by default. -->
 
-    <!-- Eskiden header(sayfanın başı), footer(sayfanın sonu), nav(menüler), article, section vb. için div fonksiyonu kullanılmaktaydı -->
+    <!-- In the past, the div function was used for header (top of the page), footer (bottom of the page), nav (menus), article, section, etc. -->
     <div class="header">
-        <h2>deneme</h2>
+        <h2>test</h2>
     </div>
     <header>
-        <h2>deneme2</h2>
+        <h2>test</h2>
     </header>
     <article>
         <section id="1">
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis veniam inventore</p>
             <footer>
-                <p>son kısım</p>
+                <p>last part</p>
             </footer>
         </section>
         <section id="2">
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis veniam inventore </p>
         </section>
         <aside>
-            <!-- asıl içeriğe ek olarak verilmek istenilen bilgiler için aside etiketi kullanılır ve genelde
-             sayfanın yarısını kaplar -->
-            <h2>İlgili Bağlantılar</h2>
+            <!-- The aside tag is used for information that is given in addition to the main content and generally takes up half of the page.-->
+            <h2>Related link</h2>
             <ul style="margin: 0px; padding: 0px;">
-                <li><a href="#">Bağlantı 1</a></li>
-                <li><a href="#">Bağlantı 2</a></li>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
                 <li><a href="#">
-                        <div style="border: 1px solid black; width: 100px ;height: 100px; background-color: yellow;text-align: center;">
-                            Bağlantı 2</div>
+                        <div
+                            style="border: 1px solid black; width: 100px ;height: 100px; background-color: yellow;text-align: center;">
+                            link 2
+                        </div>
                     </a>
                 </li>
             </ul>
         </aside>
         <details>
-            <summary style="cursor: pointer;">İçeriği göster/gizle</summary>
+            <summary style="cursor: pointer;">show and hide content</summary>
             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid perferendis veniam inventore </p>
         </details>
     </article>
@@ -58,4 +57,5 @@
     <br>
     <iframe src="https://www.hurriyet.com.tr" height="500" width="500"></iframe>
 </body>
+
 </html>
