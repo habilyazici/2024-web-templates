@@ -1,78 +1,74 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="elements-->
 
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="content-language" content="tr">
+    <meta http-equiv="content-language" content="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> This is the first page</title>
 </head>
 
 <body>
     <form>
-        <!-- labeli inputa bağla ki üstüne gelince ikisine de dokunabil ayrıca inputun kapatma etiketi yoktur-->
-        <p> <label for="surname"> Soyisim: </label>
+        <!-- Link the label to the input so that when you hover over it, both can be interacted with. Also, the input element does not have a closing tag.-->
+        <p> <label for="surname"> Surname: </label>
             <input id="surname" type="text">
         </p>
-        <label> Araba isimleri: <input type="text" placeholder="Lütfen isminizi giriniz" required> </label>
+        <label> Car name: <input type="text" placeholder="Please enter the your name" required> </label>
         <label> EMail: <input type="email" required> </label>
         <br>
-        <!-- yazmaya bir birim aşağıdan başlarsınız -->
-        <label> Şifre: <input type="password"> </label>
+        <!-- You start writing from one unit below-->
+        <label> Password: <input type="password"> </label>
 
         <p>
             <label>BMW: <input type="checkbox"> </label>
             <label>Audi: <input type="checkbox"> </label>
             <label for="ford">Ford: </label>
             <input id="ford" type="checkbox">
-            <!-- checkboxlarda istediğin kadar seçim yapabiliyosun ve seçimini iptal edebiliyorsun -->
+            <!-- With checkboxes, you can make as many selections as you want and you can also cancel your selection. -->
         </p>
         <p>
-            <label>Ekmek: <input type="radio"> </label>
-            <label>Domates: <input type="radio"> </label>
-            <label>Salatalık: <input type="radio"> </label>
-            <!-- radiolarda istediğin kadar seçim yapabiliyosun ama seçimini iptal edemiyorsun-->
+            <label>bread: <input type="radio"> </label>
+            <label>tomato: <input type="radio"> </label>
+            <label>cucumber: <input type="radio"> </label>
+            <!-- With radio buttons, you can make as many selections as you want, but you cannot cancel your selection.-->
         </p>
         <fieldset>
-            <!-- fieldset bir blok elementtir -->
-            <!-- Eğer radio'da sadece bir tuş seçim yapılsın istiyorsan tüm radioların name'ini aynı yap, value ise sunucuya
-            giderken kullanılan bilgidir. -->
-            <legend style="margin: 0px auto;"> Öğrenci Araç Gereçleri</legend>
-            <label>Kalem: <input type="radio" name="kalemkutuluğum" value="kalem"> </label>
-            <label>Silgi: <input type="radio" name="kalemkutuluğum" value="silgi"> </label>
-            <label>Uç: <input type="radio" name="kalemkutuluğum" value="Uç"> </label>
+            <!-- fieldset is the blok elements-->
+            <!-- If you want only one button to be selected in a radio group, make sure all 
+            the radio buttons have the same name. The value attribute is the information sent to the server. -->
+            <legend style="margin: 0px auto;"> Student supplies</legend>
+            <label>pencil: <input type="radio" name="my_pencil_case" value="pencil"> </label>
+            <label>eraser: <input type="radio" name="my_pencil_case" value="eraser"> </label>
+            <label>pencil lead: <input type="radio" name="my_pencil_case" value="pencil_lead"> </label>
         </fieldset>
 
-        <p> <label>Tarihi giriniz: <input type="date"> </label> </p>
-        <textarea cols="111px" rows="11px" placeholder="lütfen mesajınızı giriniz"></textarea>
+        <p> <label>enter a date <input type="date"> </label> </p>
+        <textarea cols="111px" rows="11px" placeholder="please enter a message"></textarea>
         <input type="reset" value="click here to clear">
-        <p><input type="submit" value="Giriş Yapmak İçin Tıkla "></p>
+        <p><input type="submit" value="click here to sign in"></p>
         <hr>
     </form>
-
     <form method="POST" action="kaydet.php">
-        <!-- http request methods, bu form verilerini kaydet.php dosyasına post yöntemiyle göndermektedir.-->
-        <label for="adi">Adı:</label>
-        <input type="text" id="adi" name="adi" placeholder="lütfen adınızı girin">
-        <!-- buradaki name özelliği ise form verileri sunucuya gönderilirken input verisiyle name'i eşleştirerek gönderir. yani; adi, girilen input 
-            verisine SOYADI, ise girilen soyadi verisine eşittir  -->
-        <label for="soyadi">Soyadı:</label>
-        <input type="text" name="soyadi" id="soyadi">
-        <label for="renk">Lütfen renk seçiniz: </label>
-        <input id="renk" name="renk" type="color">
-        <label for="sayi">lütfen 1 ile 100 arasında bir sayı giriniz</label>
+        <!-- HTTP request methods, this form sends its data to the 'save_data.php' file using the POST method.-->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="please enter your name">
+        <!-- The 'name' attribute here matches the input data with the name when sending form data to the server.
+        For example, 'adi' corresponds to the entered input data, and 'SOYADI' corresponds to the entered surname data. -->
+        <label for="Surname">Surname:</label>
+        <input type="text" name="surname" id="Surname">
+        <label for="renk">please choose a color: </label>
+        <input id="renk" name="color" type="color">
+        <label for="sayi">Please enter a number between 1 or 100</label>
         <input type="number" id="sayi" min="1" max="100" name="sayi">
         <input type="range" min="9" max="100" step="10" value="35">
-        <input type="url" pattern="https://www.+" placeholder="Url gir..">
-        <select class="bölüm_sec" name="bölüm_sec">
-            <option value="0">lütfen bir bölüm seçiniz</option>
-            <option value="1">ybs</option>
-            <option value="2">iktisat</option>
-            <option value="3">işletme</option>
+        <input type="url" pattern="https://www.+" placeholder="enter url...">
+        <select class="choose_department" name="bölüm_sec">
+            <option value="0">Please choose a department</option>
+            <option value="1">mis</option>
+            <option value="2">economy</option>
+            <option value="3">management</option>
         </select>
     </form>
 </body>
-
-
 </html>
