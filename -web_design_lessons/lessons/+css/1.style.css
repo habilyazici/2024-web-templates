@@ -1,17 +1,17 @@
-/* Seçiciler - sellectors:
-1. Etiket ile seçme,
-2. Id ile seçme, tek bir öğede seçim yapılacaksa ıd kullanılmaktadır.
-3. Class ile seçme, birden fazla öğede seçim yapılacaksa class kullanılmaktadır
-4. Evrensel seçiciler
-5. Torun seçiciler
-6. Bitişik seçiciler
-7. Özellik seçiciler 
-8. Sözde sınıflar ve sözde elemanlar 
+/* Selectors:
+1. Selecting by tag,
+2. Selecting by id, id is used when selecting a single element.
+3. Selecting by class, class is used when selecting multiple elements.
+4. Universal selectors
+5. Descendant selectors
+6. Adjacent selectors
+7. Attribute selectors
+8. Pseudo-classes and pseudo-elements 
 
-Css tasarımında sıralama yaparken ilk en geniş başlıklara sahip
-etiketleri tasarla sonrasında ise diğer etiketleri tasarla */
+When designing with CSS, first design the tags with the broadest headings, then design the other tags. */
 
-/* 1.Etiket ile seçme, body selecter, mavi yer attribiute, renk ise value'dir */
+
+/* 1. Selecting by tag, body selector, "mavi" is the attribute, and "renk" is the value */
 body{
     background-color: aqua;
 }
@@ -22,7 +22,7 @@ h1, h2{
 
 }
 
-/* 2.Id ile seçme, Id ile seçmide #(sharp) işareti kullanılır */
+/* 2. Selecting by id, the # (sharp) symbol is used when selecting by id */
 #p_1{
     font-size: 30px;
 }
@@ -31,7 +31,7 @@ h1, h2{
     color: red;
 }
 
-/* 3.Class ile seçme, class ile seçimde . işareti kullanılır */
+/* 3. Selecting by class, the . symbol is used when selecting by class */
 .kutu{
     width: 80px;
     height: 80px;
@@ -42,24 +42,28 @@ h1, h2{
     background-color: blueviolet;
 }
 
-/* Eğer alt alta aynı seçiciler kullanırsan ve içine bir şeyler yazarsan 
-css tasarımında sırasal olarak alttaki tasarım dikkate alınır, alt alta farklı 
-seçiciler kullanırsan seçicilerdeki kesişmeyen ayarlar etikete eklenir
-kesişenlerde ise öncelikli olan dikkate alınır. id classtan önceliklidir 
-Çocukları kullandığın bir tasarım ve daha az özellik belirten başka bir
-tasarım kullandığında çocukları kullandığın tasarım önde olacaktır. */
+/* If you use the same selectors one after the other and write something
+inside, the design at the bottom will be taken into account in the CSS 
+design. If you use different selectors one after the other,
+the non-overlapping settings in the selectors will be added to the tag.
+In the case of overlapping settings, the one with higher priority will 
+be considered. Id has higher priority than class. When you use a design
+that involves children and another design that specifies fewer properties,
+the design involving children will take precedence. */
 
-/* 4.Evrensel seçiciler ile seçme, tüm sayfadaki(tüm elementler!) her şeyi 
-seçmek için *(yıldız) kullanılır.*/
+
+/* 4. Selecting with universal selectors, the * (star) is used 
+to select everything (all elements!) on the entire page. */
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
-/* 5.Torun veya çocuk seçiciler ile seçme */ 
+/* 5. Selecting with descendant or child selectors */
 ul li{
     list-style-type: none;
-    /* listenin madde işaretin kaldırıyor */
+/* removes the bullet points from the list */
 }
 ul li a{
     color: red;
@@ -71,25 +75,26 @@ ul li em{
     color: yellow;
 }
 
-/* Bu kısımda etiketlerin arasında başka etiketlerin olması önemli değil. */
+/* In this part, it doesn't matter if there are other tags between the tags. */
 h3 b{
     color: blue;
 }
 h3 em > b{
     color: salmon;
 }
-/* h3 ve em'in içinde ve em'in direkt çocuğu olarak b varsa(em'in içinde bir 
-şeyler yazabilir) b'nin rengini salmon yapar*/
+/* If there is a <b> inside <h3> and <em>, and <b> is a direct child of
+<em> (i.e., <em> can contain other content), it changes the color of <b> 
+to salmon. */
 
-/* 6.Bitişik seçiciler */
+/* 6. Adjacent selectors */
 h3+p{
     font-size: 18px;
     color:pink;
     font-style: italic;
 } 
-/*h3 ten hemen sonraki element olarak bir p etiketi varsa ona uyguluyor bu etiketi */
+/* If there is a <p> element immediately following an <h3> element, it applies this style to that <p> element. */
 
-/* 7.Özellilk seçiciler */
+/* 7. Attribute selectors */
 a[title="link_1"]{
     color:chartreuse;
 }
