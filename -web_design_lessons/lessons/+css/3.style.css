@@ -1,4 +1,4 @@
-/* Öncelik sırası */
+/* Priority order */
 html{
     background-color: #0099FF;
 } 
@@ -14,23 +14,25 @@ body{
     align-items: center;
 } 
 
-#yeni{
+#new{
     color:black ;
 
 }
-.sinif{
+.class{
     color: yellow !important;
 }
 li{
     color: blue;
 }   
-/* Sıralamada spesifik seçiciler önde ayrıca hiyerarşik olarak alttaki tasarım önde
-ve important ile durumu değiştirebilirsin. */
+/* In the order, specific selectors take precedence, and hierarchically, 
+the design at the bottom takes precedence. You can change the situation 
+with !important. */
+
 
 #p_1{
     color:red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* sırasıyla renkler tanımlı değilse bir sonrakini alır */
+    /* If the colors are not defined in order, it will take the next one. */
     font-size: 23px;
     font-style: italic;
     text-transform: capitalize;
@@ -45,28 +47,31 @@ ve important ile durumu değiştirebilirsin. */
     letter-spacing: 25px;
     word-spacing: 25px;
     text-shadow: 4px 4px 5px #990033;
-    /* Metnin 4 piksel sağa ve 4 piksel aşağıya bir gölge ekler.Gölgenin bulanıklık
-    miktarı 5 piksel ve gölgenin rengi #990033 olur */
-    /* white-space: normal;
+    /* Adds a shadow 4 pixels to the right and 4 pixels down from the text.
+    The shadow's blur amount is 5 pixels and the color of the 
+    shadow will be #990033 */
+    /* white-space: normal; 
     direction: ltr; */
+
 }
 
-#kutucuk1 {
-    display: flex; /* içeriği flex konteyner yapar */
-    flex-direction: row; /* flexin içeriğini yatay olarak yerleştirir */
-    justify-content: center; /* içerikleri yatay eksende eşit parçaya böler ve ortalar */
-    align-items: center; /* içerikleri dikey eksende eşit parçaya böler ve ortalar*/
+#box1 {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
     background-color: #ccc;
     width: 100px;
     height: 100px;
-    /* inline elementlerin genişlik ve yükseklik özellikleri olmamakla beraber
-    marign ve paddingler sadece yatay yönde işe yarar buna karşın inline-blok
-    ile her şeyi yapabilirsin*/
+    /* Inline elements do not have width and height properties,
+    and margins and paddings only work horizontally. In contrast, 
+    with inline-block, you can do everything. */
+
 }
-#kutucuk1 input {
+#box1 input {
     font-size: 8px;
 }
-#kutucuk1 p {
+#box1 p {
     font-size: 14px;
 }
 input[type="submit"]{
@@ -74,7 +79,7 @@ input[type="submit"]{
     background-color:chartreuse;
 }
 
-#kutucuk2{
+#box2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,14 +89,14 @@ input[type="submit"]{
     height: 100px;
     margin: 60px;
 }
-#kutucuk3{
+#box3{
     background-color: greenyellow;
     width: 100px;
     height: 100px;
     padding-top: 30px;
     padding-left: 30px;
     box-sizing: border-box;
-    /* bu sayede padding değerlerini içeriye ekledik */
+    /* This way, we added the padding values to the content. */
 }  
 .menu {
     position: fixed;
@@ -125,8 +130,9 @@ input[type="submit"]{
 }
 .menu:hover li {
     display: inline;
-    /* ister inline ister display inline de bu durum için
-    çünkü boyutlarını dış divden ayarladık */
+/* Whether inline or display: inline, this applies
+ because we adjusted the dimensions from the outer div. */
+
 }
 
 .menu li a {
