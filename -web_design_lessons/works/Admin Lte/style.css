@@ -16,16 +16,16 @@ body{
     flex-direction: column;
     align-items:center;
 }
-.logo_yazi{
+.logo_text{
     color:#495057;
     font-size: 32px;
     margin-bottom: 18px;
     font-weight: 300;
 }
-.logo_yazi b {
+.logo_text b {
     font-weight: 400;
 }
-.form_kutusu{
+.form_box{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -35,12 +35,12 @@ body{
     background-color: #fff;
     box-shadow: 20px 20px 10px rgba(0, 0, 0, .15);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, .15); 
-    /* buradaki ilk kısım x ikinci kısım y*/
+    /* the first place here is x the second place here y*/
     border-radius: 3px;
     padding-bottom: 20px;
-    /* padding ile genişletme işlemi de yapılabilir.*/
+    /* Padding can be used to increase the size. */
 }
-.signin_yazi{
+.signin_text{
     margin:17px;
     color:#666;
 }
@@ -73,7 +73,7 @@ body{
     font-weight: 100;
     color: rgba(73, 80, 87, .6);
 }
-.remember_kutu {
+.remember_box {
     display: flex;
     justify-content: space-between; 
     width: 88%;
@@ -95,7 +95,7 @@ body{
     font-size: 16px;
 } 
 
-.remember_kutu button {
+.remember_box button {
     width: 97px; 
     height: 38px;
     border-radius: 3px;
@@ -105,7 +105,7 @@ body{
     background-color: #1D7EFA;
 }
 
-.remember_kutu button:hover{
+.remember_box button:hover{
     background-color: #176BD5;
     transition: 0.5s;
 }
@@ -114,13 +114,13 @@ a , button, label{
     cursor: pointer;
 }
 
-.social_kutu{
+.social_box{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-.social_kutu button{
+.social_box button{
     width: 88%;
     height: 35px;
     margin-bottom: 15px; 
@@ -141,24 +141,24 @@ a , button, label{
 .google_buton:hover{
     background-color: #C52734;
 }
-.social_kutu p{
+.social_box p{
     margin-bottom: 15px;
 }
-.social_kutu i{
+.social_box i{
     margin-right: 10px;
 }
-.linkler{
+.links{
     width: 88%;
     color: #FFFFFF;
 }
-.linkler a{
+.links a{
     text-decoration: none;
     display:block;
 }
 
-/* Normalde bir divin var 200px 200px lik sen buna 20pxlik border
-veya padding ekleyince artık senin divinin genişlik ve yükseklik
-240px oluyo yani divin dış kısmının iik tarafına da senin 20px
-borderını ekliyor ve senin divin genişliyor ama box-sizing:border-box
-yaparsan padding veya borderi divin içerisinden ekliyor yani
-divinin boyutları değişmiyor */
+/* Normally, if you have a div that is 200px by 200px and you 
+add a 20px border or padding, the width and height of your div
+ will become 240px. This is because the 20px border is added to
+  the outer side of the div, making it larger. However, 
+  if you use box-sizing: border-box, the padding or border is included 
+  inside the div, meaning the dimensions of your div do not change. */
