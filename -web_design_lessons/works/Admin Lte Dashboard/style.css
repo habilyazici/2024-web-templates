@@ -193,7 +193,7 @@ header{
 }
 .sidebar-sekmeler{
     box-sizing: border-box;
-    padding: 0px 12px 0px 12px;
+    padding: 0px 12px;
     border-radius: 5px;
     width: 100%;
     height: 43px;
@@ -251,10 +251,17 @@ header{
     background-color: #007BFF;
     margin-top: 10px;
 }
-.widgets img{
-    width: 33px;
-    margin-top: 5px;
-    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.5);
+.widgets{
+    background-color: #dc3545;
+    font-size:12px;
+    height:19px;
+    width:30px;
+    border-radius:5px;
+    box-shadow: -5px 5px 5px 3px black;
+    margin-top:-6px;
+}
+.widgets2{
+    margin-right:5px;
 }
 .inline-blok{
     display: inline-block;
@@ -296,13 +303,11 @@ header{
     color: black;
     opacity: 0.6;
 }
-.content-footer .footer2{
+.content-footer>div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-.footer2{
     margin-top: 3px;
     padding-bottom: 3px;
     box-sizing: border-box;
@@ -375,7 +380,7 @@ header{
 }
 .column-footer1 div:nth-child(2){
     text-align: end;
-    /* fotoğraflar, divler de dahil */
+    /* including the photo and div */
 }
 .column-footer1 div{
     width: 50%;
@@ -475,12 +480,6 @@ tbody div span{
 }
 .sales-td-3 span,.sales-td-3 i{   
     color: red;
-}
-#new-png{
-    width: 23px;
-    height: 18px;
-    border-radius: 3px;
-    margin-bottom: -5px;
 }
 .two-column-footer tbody td:nth-child(4):hover{
     color:#007BFF
