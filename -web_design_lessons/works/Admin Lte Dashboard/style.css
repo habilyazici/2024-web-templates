@@ -47,14 +47,14 @@ header{
 }
 .sidebar2 .img {
     border: 1px solid black;
-    border-radius: 50%;
+    border-radius: 30px;
     background-color: white;
     opacity: 0.9;
     box-shadow: 0px 0px 1px black;
 }
 .sidebar2 img{
     width: 33px;
-    height: 28px;
+    height: 30px;
 }
 .sidebar2 span a{
     text-decoration: none;
@@ -66,7 +66,7 @@ header{
 .sidebar2 span a p:hover{
     opacity: 1;
 }
-.left li{
+.left li,.rigt li{
     list-style-type: none;
     display: inline-block;
 }
@@ -78,29 +78,25 @@ header{
     margin-left: 20px;
 }
 .left li a:hover{
-    color: rgba(0, 0, 0, 1)
+    color: rgba(0, 0, 0, 1);
 }
 .left{
-    margin-left: -38px
+    margin-left: -38px;
 }
 .left ul li:first-child i{
     background-color: white;
-    color: rgba(0, 0, 0, 0.5)
+    color: rgba(0, 0, 0, 0.5);
 }
 .left ul li:first-child i:hover{
-    color: rgba(0, 0, 0, 1)
-}
-.rigt li{
-    list-style-type: none;
-    display: inline-block;
+    color: rgba(0, 0, 0, 1);
 }
 .rigt li span{
     font-size: 10px;
     font-weight: 300;
-    padding: 2px 4px;
-    right: 5px;
+    padding: 1px 3px;
     color: #fff;
     background-color: #dc3545;
+    vertical-align: bottom;
 }
 .rigt li a{
     color: rgba(0, 0, 0, 0.6);
@@ -118,11 +114,11 @@ header{
     color: rgba(0, 0, 0, 1)
 }
 .rigt{
-    margin-left: -36px;
     margin-right: 20px;
 }
 .logo2{
     display: flex;
+    align-items:center;
     margin: 7px 0px;
 }
 .logo2 img{
@@ -143,8 +139,7 @@ header{
 }
 .logo2 span{
     display: inline-block;
-    margin-top: 6px;
-    margin-left: 10px;
+
 }
 .logo2 img{
     opacity: 1;
