@@ -185,7 +185,7 @@ overflow: visible;
 
 button,
 select { /* 1 */
-text-transform: none;
+    text-transform: none;
 }
 
 /**

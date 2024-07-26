@@ -25,16 +25,14 @@ p{
 .container{
     max-width: 1200px;
     margin: 0 auto 0 auto;
-    /* direkt 0 auto da aynı işi görüyor */
+    /*Directly 0 auto does the same job.*/
 }
 header{
-    background-image: url(../img/headebg.jpg) ;
+    background-image: url(../img/headebg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
-    /* Hiçbir ayar yapmazsan genişlikte
-    tekrar eder yükseklükte ise kafasına göre takılır*/
     margin-bottom: -20px;
 }
 
@@ -73,12 +71,11 @@ nav a{
 }
 .header-content{
     text-align: center;
-    /* text-align: end */
     color: #fff;
 }
-/* eğer yatay olarak hizalama istenilen ise bu yeterli ama 
-dikey olarak da hizalanması gerekiyorsa display flex ve 
-geri kalan özellikler de kullanılmalıdır. */
+/* If horizontal alignment is desired, this is sufficient,
+but if vertical alignment is also needed,
+display: flex and other properties should be used as well. */
 
 .header-content span{
     color: #fed301;
@@ -91,8 +88,9 @@ geri kalan özellikler de kullanılmalıdır. */
 }
 .main-btn {
     display: inline-block;
-    /* inline-blok div özellikleri katar ayrıca bu özelliklere ek
-    olarak bu içerikleri yan yana da yazabilirsin*/
+    /*Inline-block div properties allow additional features, 
+    and on top of these properties, 
+    you can also write the contents side by side.*/
     width: 180px;
     height: 48px;
     border-radius: 5px;
