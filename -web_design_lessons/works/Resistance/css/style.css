@@ -13,7 +13,7 @@ body{
 .main{
     background-image: url(../img/home-mainbg.jpg);
     background-position: center center;
-    height: 570px;
+    padding-bottom: 100px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -214,7 +214,7 @@ section h2{
     font-size: 30px;
     font-weight: 300;
     text-align: center;
-    padding: 56px 0px
+    padding: 56px 0;
 }
 .section-contact h2{
     color:#16b2ba;
@@ -266,9 +266,7 @@ section h2{
     border-radius:50%
 }
 .rows div:hover{
-    width: 49%;
-    height: 300px;
-    background-size: cover;
+    height: 260px;
 }
 .rows div:hover p{
     font-size: 18px;
@@ -345,7 +343,7 @@ section h2{
     font-weight: 500;
     line-height: 30px;
 }
-.section2 p:nth-child(1){
+.section2 p:first-child{
     font-weight: 200;
     padding-top: 112px;
 }
@@ -460,10 +458,8 @@ section h2{
 }
 .section4 .container{
     height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
 }
 .section4 .container a{
     display: inline-block
