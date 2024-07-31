@@ -146,19 +146,18 @@ section h2 {
     font-size: 30px;
     font-weight: 300;
     text-align: center;
-    padding: 56px 0;
+    padding: 28px 0;
 }
 
 .rows {
     text-align: center;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    position: relative;
+    width:100%;
 }
 
-.rows div {
+.column{
     height: 250px;
     width: 48%;
     min-width: 20rem;
@@ -169,11 +168,12 @@ section h2 {
     justify-content: center;
     margin-right: 5px;
     margin-top: 5px;
-    padding: 30px;
     margin-bottom: 2rem;
+    padding: 30px;
+    position: relative;
 }
 
-.rows div:hover {
+.column:hover {
     transform: scale(1.03);
     transform-origin: 50% 50%;
 }

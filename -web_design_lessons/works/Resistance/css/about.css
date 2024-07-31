@@ -1,6 +1,6 @@
 .main-about {
     background-image: url(../img/about-mainbg.jpg);
-    height: 470px;
+    background-attachment: fixed;
 }
 .header-middle-about li:nth-child(1) a {
     color: white;
@@ -15,83 +15,80 @@
     background-color: white;
 }
 
-section .about-container {
+.container-about {
     text-align: center;
 }
-
-section .about-container p {
+.container-about>p {
     color: black;
-    margin-bottom: 56px;
+    font-weight: 300;
+    margin-bottom:2rem
 }
-.about-container h2 {
-    padding: 28px 0px;
+
+.column p {
+    color: black;
 }
-.about-container>div {
+
+.container-about>h2 {
+    font-weight: 500;
+    padding: 15px 0px;
+    color:#16b2ba
+}
+.column h2 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 0px;
+    color:#16b2ba
+}
+
+.container-about>div {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
 }
-
-.about-container .rows {
-    justify-content: center;
-    width: 50%;
+.rows{
+    width:50%;
+    min-width:15rem;
 }
-.about-container .rows div {
-    height: 300px;
-    width: 50%;
-    flex-direction: row;
+.column{
+    width: 48%;
+    aspect-ratio: 1/1;
+    min-width: 200px;
+    height: auto !important;
     border-radius: 50%;
     box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 30px;
 }
-.about-container .column-1-2 {
+
+.column div{
+    position: relative;
+    top: 100%;
+}
+
+.container-about .column-1-2 {
     background-image: url(../img/about-section1-member1.png);
 }
 
-.about-container .column-1-2 div,
-.about-container .column-2-2 div,
-.about-container .column-1-2-2 div,
-.about-container .column-2-2-2 div {
-    position: relative;
-    top: 105%;
-    display: flex;
-    flex-direction: column;
-}
-
-.about-container .column-1-2 div h2,
-.about-container .column-2-2 div h2,
-.about-container .column-1-2-2 div h2,
-.about-container .column-2-2-2 div h2 {
-    font-size: 16px;
-    color: black;
-    width: 100px;
-}
-
-.about-container .column-1-2 div p,
-.about-container .column-2-2 div p,
-.about-container .column-1-2-2 div p,
-.about-container .column-2-2-2 div p {
-    display: block;
-    color: #11b7b1;
-}
-
-.about-container .column-2-2 {
+.container-about .column-2-2 {
     background-image: url(../img/about-section1-member2.png);
 }
 
-.about-container .column-1-2-2 {
+.container-about .column-1-2-2 {
     background-image: url(../img/about-section1-member3.png);
 }
 
-.about-container .column-2-2-2 {
+.container-about .column-2-2-2 {
     background-image: url(../img/about-section1-member4.png);
 }
-
-
-
-
-
 
 .section3-about {
     height: 200px;
