@@ -1,0 +1,109 @@
+.main-about {
+    background-image: url(../img/about-mainbg.jpg);
+    background-attachment: fixed;
+}
+.header-middle-about li:nth-child(1) a {
+    color: white;
+    font-size: 16px;
+}
+
+.header-middle-about li:nth-child(2) a {
+    color: #16b2ba;
+    font-size: 16px;
+}
+.section-about {
+    background-color: white;
+}
+
+.container-about {
+    text-align: center;
+}
+.container-about>p {
+    color: black;
+    font-weight: 300;
+    margin-bottom:2rem
+}
+
+.column p {
+    color: black;
+}
+
+.container-about>h2 {
+    font-weight: 500;
+    padding: 15px 0px;
+    color:#16b2ba
+}
+.column h2 {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 0px;
+    color:#16b2ba
+}
+
+.container-about>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.rows{
+    width:50%;
+    min-width:15rem;
+}
+.column{
+    width: 48%;
+    aspect-ratio: 1/1;
+    min-width: 200px;
+    height: auto !important;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 30px;
+}
+
+.column div{
+    position: relative;
+    top: 100%;
+}
+
+.container-about .column-1-2 {
+    background-image: url(../img/about-section1-member1.png);
+}
+
+.container-about .column-2-2 {
+    background-image: url(../img/about-section1-member2.png);
+}
+
+.container-about .column-1-2-2 {
+    background-image: url(../img/about-section1-member3.png);
+}
+
+.container-about .column-2-2-2 {
+    background-image: url(../img/about-section1-member4.png);
+}
+
+.section3-about {
+    height: 200px;
+    background-image: url(../img/about-section2bg.jpg);
+}
+
+.section3-about .container {
+    height: 310px;
+}
+
+.section3-about h2 {
+    padding-top: 56px;
+}
+
+.section3-about p {
+    margin-top: -38px;
+    color: black;
+}

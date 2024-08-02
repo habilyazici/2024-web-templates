@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+}
+body{
+    background-color: #e9ecef;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.logo_text{
+    color:#495057;
+    font-size: 32px;
+    margin-bottom: 18px;
+    font-weight: 300;
+}
+.logo_text b {
+    font-weight: 400;
+}
+.form_box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:360px;
+    height: 430px;
+    background-color: #fff;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, .15);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .15); 
+    /* the first place here is x the second place here y*/
+    border-radius: 3px;
+    padding-bottom: 20px;
+    /* Padding can be used to increase the size. */
+}
+.signin_text{
+    margin:17px;
+    color:#666;
+}
+.input-group{
+    display:flex;
+    align-items: center;
+    border: 1px solid #ced4da;
+    border-width: 1px 1px 1px 0px;
+    border-radius: 6px;
+    height: 38px;
+    margin: 10px;
+    padding-right: 10px;
+}
+.input-group input{
+    height: 38px;
+    width: 280px;
+    color:#495057;
+    border:1px solid #ced4da;
+    border-radius: 6px;
+    padding-left: 10px;
+    border-right: 0px;
+    border-top-right-radius:0px ;
+    border-bottom-right-radius:0px ;
+}
+.input-group i{
+    color:#495057;
+}
+.input-group input::placeholder{
+    font-size: 15px;
+    font-weight: 100;
+    color: rgba(73, 80, 87, .6);
+}
+.remember_box {
+    display: flex;
+    justify-content: space-between; 
+    width: 88%;
+    margin-bottom: 15px;
+}
+
+.remember{
+    color:#666;
+    display: flex;
+    align-items: center;
+}
+
+.remember input {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+}
+.remember label{
+    font-size: 16px;
+} 
+
+.remember_box button {
+    width: 97px; 
+    height: 38px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 15px;
+    border: 0px;
+    background-color: #1D7EFA;
+}
+
+.remember_box button:hover{
+    background-color: #176BD5;
+    transition: 0.5s;
+}
+
+a , button, label{
+    cursor: pointer;
+}
+
+.social_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.social_box button{
+    width: 88%;
+    height: 35px;
+    margin-bottom: 15px; 
+    border-radius: 3px;
+    border: 0px;
+    color:#fff;
+    font-size: 15px;
+}
+.facebook_buton{
+    background-color: #1D7EFA;
+}
+.facebook_buton:hover{
+    background-color: #176BD5;
+}
+.google_buton{
+    background-color: crimson;
+}
+.google_buton:hover{
+    background-color: #C52734;
+}
+.social_box p{
+    margin-bottom: 15px;
+}
+.social_box i{
+    margin-right: 10px;
+}
+.links{
+    width: 88%;
+    color: #FFFFFF;
+}
+.links a{
+    text-decoration: none;
+    display:block;
+}
+
+/* Normally, if you have a div that is 200px by 200px and you 
+add a 20px border or padding, the width and height of your div
+ will become 240px. This is because the 20px border is added to
+  the outer side of the div, making it larger. However, 
+  if you use box-sizing: border-box, the padding or border is included 
+  inside the div, meaning the dimensions of your div do not change. */
